@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class = 'card' *ngIf = 'patient'>
+    <div class = 'card-header'>
+        {{pageTitle + ': ' + patient.first_name + ' ' + patient.last_name}}
+    </div>
+    <div class="card-body">
+
+        <div>
+            <strong>Id:</strong>
+            {{ patient.id }}</div>
+        <div>
+            <strong>First Name:</strong>
+            {{ patient.first_name }}</div>
+        <div>
+            <strong>Last Name:</strong>
+            {{ patient.last_name }}</div>
+        <div>
+            <strong>Gender:</strong>
+            {{ patient.gender }}</div>
+        <div>
+            <strong>Diagnosis Code:</strong>
+            {{ patient.diagnosis_code }}</div>
+        <div>
+            <strong>Diagnosis Description:</strong>
+            {{ patient.diagnosis_description }}</div>
+        <div>
+            <strong>Diagnosis Description Detailed:</strong>
+            {{ patient.diagnosis_description_detailed }}</div>
+        <div>
+            <strong>Administered Drug Treatment:</strong>
+            {{ patient.administered_drug_treatment }}</div>
+                
+    </div>
+    <div style="margin-left: 20px;">
+        <button class = 'btn btn-outline-secondary'
+            (click) = 'onBack()'
+            style="width:80px">
+            <i class= 'fa fa-chevron-left'></i>
+            Back
+        </button>
+    </div>
+<br/>
+</div>
+
+
+
+
+
+
+
